@@ -1,0 +1,94 @@
+<div class="image">
+    <div class="container">
+        <div>
+            <h2>Welcome to the HomePage</h2><br>
+
+            <!-- <div *ngIf="users.length > 0 ; else noUsers">
+                <h4>Registered Users</h4>
+                <ul>
+                    <li *ngFor="let user of users" >
+                        <div [ngClass]="{'highlighted-row' : user === currentUser}">
+                            <p><strong>Name : </strong> {{user.name}} </p>
+                            <p><strong>Email : </strong>{{user.email}}</p>
+                        </div>
+                       
+                    </li>
+                </ul>
+            </div> -->
+
+            <div *ngIf="users.length > 0; else noUsers">
+                <h2>Registered Users:</h2>
+                <table class="user-table">
+                    <thead>
+                        <tr>
+                            <!-- <th>id</th> -->
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let user of users" [ngClass]="{'highlighted' : user.email === currentUser?.email}">
+                            <td>{{ user.name }}</td>
+                            <td>{{ user.email }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <ng-template #noUsers>
+                <p style="color: Red;font-size: 20px;">No registered users found.</p>
+            </ng-template>
+
+            <!-- 
+            <ng-template #noUsers>
+                <p>No Registered Users</p>
+            </ng-template>  -->
+
+            <!-- <div *ngIf="currentUser">
+                <h2>Current User</h2>
+                <p><strong>Name : </strong>{{currentUser.name}}</p>
+                <p><strong>Email : </strong>{{currentUser.email}}</p>
+            </div> -->
+
+
+
+            <!-- <div *ngIf="currentUser">
+                <p>Name : {{ currentUser.name}} </p>
+                <p>Email : {{currentUser.email}}</p>
+            </div>
+
+            <div *ngIf="!currentUser">
+                <p>Please login to access HomePage</p>
+            </div> -->
+
+            <!-- <table *ngIf="users.length > 0">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let user of users ; let odd = odd"
+                        [ngClass]="{'highlighted' : currentUser && currentUser.name=== user.name}">
+                        <td>{{user.name}}</td>
+                        <td>{{user.email}}</td>
+                    </tr>
+                </tbody>
+            </table> -->
+
+            <!-- <div *ngIf="users.length === 0">
+                <p>No Registered user</p>
+            </div> -->
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- menu -->
+

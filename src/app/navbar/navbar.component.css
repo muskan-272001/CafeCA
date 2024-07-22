@@ -1,0 +1,36 @@
+.btn {
+    color: white;
+    background-color: #3F2305;
+    transition: 0.5s;
+}
+
+.btn :hover {
+    color: black;
+    background-color: white;
+}
+
+.navbar-brand {
+    font-weight: 900;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    color: #3F2305;
+}
+
+img {
+    height: 45px;
+    width: 100%;
+}
+
+.nav-item a {
+    color: #3F2305;
+}
+
+#logOutButton {
+    margin-left: 2%;
+    background-color: green;
+}
+
+#logOutButton :hover {
+    background-color: red;
+}

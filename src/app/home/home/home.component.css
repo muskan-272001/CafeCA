@@ -1,0 +1,57 @@
+.image {
+  height: 686px;
+  width: 100%;
+  background-image: url("https://wallpaper.dog/large/5545515.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50%;
+  margin-bottom: 10%;
+}
+
+h2 {
+  font-weight: 600;
+  color: white;
+}
+
+.text {
+  font-weight: 400;
+  color: white;
+}
+
+span {
+  color: blue;
+}
+
+.user-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.user-table td {
+  color: white;
+}
+
+.user-table th {
+  background-color: #f2f2f2;
+
+}
+
+.highlighted {
+  background-color: red;
+}

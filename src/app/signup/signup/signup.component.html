@@ -1,0 +1,39 @@
+<div class="image">
+  <div class="container">
+    <div class="login-box">
+      <div class="loginHead">
+        <div class="text">
+          <h2>Signup Here</h2>
+        </div>
+      </div>
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+
+        <div class="user-box">
+          <input type="text" name="name" formControlName="name" required="">
+          <label>Name</label>
+        </div>
+
+        <div class="user-box">
+          <input type="email" name="email" formControlName="email" required="">
+          <label>Email</label>
+        </div>
+
+        <div class="user-box">
+          <input type="password" name="password" formControlName="password" required="">
+          <label>Password</label>
+        </div>
+
+        <button class="submitButton" type="submit" [disabled]="!signupForm.valid">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Signup
+        </button>
+
+      </form>
+      <a class="newUser" routerLink="/login">New user ? Click to login!!</a>
+
+    </div>
+  </div>
+</div>
